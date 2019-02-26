@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Railsapp1</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-logo">
+        <%= link_to("FitnessApp", "/") %>
+      </div>
+      <ul class="header-menus">
+        <% if @current_user %>
+          <li>
+            <%= @current_user.email %>
+          </li>
+          <li>
+            <%= link_to("投稿一覧", "/kintore_posts/index") %>
+          </li>
+          <li>
+            <%= link_to("新規投稿","/kintore_posts/new") %>
+          </li>
+          <li>
+            <%= link_to("ログアウト", "/logout", {method: :post}) %>
+          </li>
+        <% else %>
+          <li>
+            <%= link_to("ログイン", "/login") %>
+          </li>
+        <% end %>
+      </ul>
+    </header>
+    <%= yield %>
+  </body>
+</html>

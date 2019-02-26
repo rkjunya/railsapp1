@@ -1,0 +1,15 @@
+current directory: /Users/junya/Desktop/railsapp1/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.0/ext/bootsnap
+/Users/junya/.rbenv/versions/2.6.1/bin/ruby -I /Users/junya/.rbenv/versions/2.6.1/lib/ruby/2.6.0 -r ./siteconf20190217-13505-96iyua.rb extconf.rb
+creating Makefile
+
+current directory: /Users/junya/Desktop/railsapp1/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.0/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/junya/Desktop/railsapp1/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.0/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/junya/Desktop/railsapp1/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.0/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20190217-13505-11b43vd/bootsnap

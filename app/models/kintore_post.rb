@@ -1,0 +1,2 @@
+class KintorePost < ApplicationRecord
+end
